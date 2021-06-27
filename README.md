@@ -1,6 +1,8 @@
-### 前言
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-#### 为什么要在这里写博客
+## 前言
+
+### 为什么要在这里写博客
 ---
 
 在此之前在其他平台也有写博客，折腾来折腾腾去还是准备来这里的`Issues`上写，成为大佬的第一步嘛。哈哈哈😁
@@ -16,3 +18,11 @@
 在这里立个`flag`，在学科锐逆向学习期间，坚持在此更新博客，每周不少于5次。
 
 现在对使用GitHub写博客还不熟悉，先用`readme`在此占个地，后面再给它搬到`issues`中去。
+
+
+
+## 博客目录
+
+### 计算机基础
+
+#### [PC逆向学习环境准备](https://github.com/RyzeZR/blog/issues/1)
