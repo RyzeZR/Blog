@@ -1,0 +1,589 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<STYLE type=text/css>TD {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 16px
+}
+A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+.newtx {
+	BORDER-RIGHT: 1px groove; BORDER-TOP: 1px groove; FONT-SIZE: 9pt; BORDER-LEFT: 1px groove; WIDTH: 120px; BORDER-BOTTOM: 1px groove; HEIGHT: 19px
+}
+.newbt {
+	BORDER-RIGHT: 1px ridge; BORDER-TOP: 1px ridge; FONT-SIZE: 9pt; BORDER-LEFT: 1px ridge; WIDTH: 50px; BORDER-BOTTOM: 1px ridge; BACKGROUND-COLOR: #a2afc6
+}
+.a1 {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.a2 {
+	LINE-HEIGHT: 18px
+}
+.f1 {
+	FONT-SIZE: 12px; LINE-HEIGHT: 20px
+}
+.f2 {
+	FONT-SIZE: 12pt; LINE-HEIGHT: 22px
+}
+</STYLE>
+<title>微软C/C++编译器选项</title>
+</head>
+
+<BODY BACKGROUND="..\back\bg.gif" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+<h1 align="center"><FONT COLOR="#FF0000"><B><SPAN STYLE='font-size:18.0pt;mso-bidi-font-size:12.0pt'><FONT CLASS=title 
+                        COLOR=#ff0000><B><BR></B></FONT><FONT COLOR="#FF0000"><B><SPAN STYLE='font-size:18.0pt;mso-bidi-font-size:12.0pt'><FONT CLASS=title 
+                        COLOR=#ff0000>微软C/C++编译器选项</FONT></SPAN></B></FONT></SPAN></B></FONT></h1>
+<P ALIGN="CENTER">(整理/hangwire发表于VCKBase 2003-2-26 9:12:35)</P>
+<TABLE WIDTH="94%" ALIGN="CENTER"><TR>
+    <TD class=f2> 
+      <table border=1 bordercolor=#FFCC00 cellpadding=0 cellspacing=0 id=AutoNumber1 
+style="BORDER-COLLAPSE: collapse" width="100%">
+        <tbody> 
+        <tr> 
+          <td align=middle colspan=3 width="100%"> 
+            <div align="center"><span class="big"><font color=#008000><b>-优化- 
+              </b></font></span></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/O1</span></td>
+          <td width="33%"><span class="big">最小化空间</span></td>
+          <td width="34%"><span class="big">minimize space</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Op[-]</span></td>
+          <td width="33%"><span class="big">改善浮点数一致性</span></td>
+          <td width="34%"><span class="big">improve floating-pt consistency</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/O2</span></td>
+          <td width="33%"><span class="big">最大化速度</span></td>
+          <td width="34%"><span class="big">maximize speed</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Os </span></td>
+          <td width="33%"><span class="big">优选代码空间 </span></td>
+          <td width="34%"><span class="big">favor code space</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Oa</span></td>
+          <td width="33%"><span class="big">假设没有别名</span></td>
+          <td width="34%"><span class="big">assume no aliasing</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Ot</span></td>
+          <td width="33%"><span class="big">优选代码速度</span></td>
+          <td width="34%"><span class="big">favor code speed</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Ob<n></span></td>
+          <td width="33%"><span class="big">内联展开（默认 n=0）</span></td>
+          <td width="34%"><span class="big">inline expansion (default n=0)</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Ow </span></td>
+          <td width="33%"><span class="big">假设交叉函数别名 </span></td>
+          <td width="34%"><span class="big">assume cross-function aliasing</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Od </span></td>
+          <td width="33%"><span class="big">禁用优化（默认值） </span></td>
+          <td width="34%"><span class="big">disable optimizations (default)</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Ox </span></td>
+          <td width="33%"><span class="big">最大化选项。(/Ogityb2 /Gs)</span></td>
+          <td width="34%"><span class="big">maximum opts. (/Ogityb1 /Gs)</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Og </span></td>
+          <td width="33%"><span class="big">启用全局优化 </span></td>
+          <td width="34%"><span class="big">enable global optimization </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Oy[-] </span></td>
+          <td width="33%"><span class="big">启用框架指针省略 </span></td>
+          <td width="34%"><span class="big">enable frame pointer omission</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Oi </span></td>
+          <td width="33%"><span class="big">启用内建函数 </span></td>
+          <td width="34%"><span class="big">enable intrinsic functions</span></td>
+        </tr>
+        <tr> 
+          <td align=middle colspan=3 style="COLOR: #008000" width="100%"> 
+            <div align="center"><span class="big"><b>-代码生成- </b></span></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/G3 </span></td>
+          <td width="33%"><span class="big">为 80386 进行优化 </span></td>
+          <td width="34%"><span class="big">optimize for 80386</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/G4 </span></td>
+          <td width="33%"><span class="big">为 80486 进行优化 </span></td>
+          <td width="34%"><span class="big">optimize for 80486</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/GR[-] </span></td>
+          <td width="33%"><span class="big">启用 C++ RTTI </span></td>
+          <td width="34%"><span class="big">enable C++ RTTI</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/G5 </span></td>
+          <td width="33%"><span class="big">为 Pentium 进行优化 </span></td>
+          <td width="34%"><span class="big">optimize for Pentium</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/G6</span></td>
+          <td width="33%"><span class="big">为 Pentium Pro 进行优化 </span></td>
+          <td width="34%"><span class="big">optimize for Pentium Pro</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/GX[-] </span></td>
+          <td width="33%"><span class="big">启用 C++ 异常处理（与 /EHsc 相同） </span></td>
+          <td width="34%"><span class="big">enable C++ EH (same as /EHsc)</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/EHs </span></td>
+          <td width="33%"><span class="big">启用同步 C++ 异常处理 </span></td>
+          <td width="34%"><span class="big">enable synchronous C++ EH</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/GD</span></td>
+          <td width="33%"><span class="big">为 Windows DLL 进行优化</span></td>
+          <td width="34%"><span class="big">optimize for Windows DLL</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/GB </span></td>
+          <td width="33%"><span class="big">为混合模型进行优化（默认） </span></td>
+          <td width="34%"><span class="big">optimize for blended model (default)</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/EHa </span></td>
+          <td width="33%"><span class="big">启用异步 C++ 异常处理 </span></td>
+          <td width="34%"><span class="big">enable asynchronous C++ EH</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Gd </span></td>
+          <td width="33%"><span class="big">__cdecl 调用约定 </span></td>
+          <td width="34%"><span class="big">__cdecl calling convention </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/EHc </span></td>
+          <td width="33%"><span class="big">extern“C”默认为 nothrow </span></td>
+          <td width="34%"><span class="big">extern "C" defaults to nothrow</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Gr </span></td>
+          <td width="33%"><span class="big">__fastcall 调用约定 </span></td>
+          <td width="34%"><span class="big">__fastcall calling convention</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Gi[-]</span></td>
+          <td width="33%"><span class="big">启用增量编译</span></td>
+          <td width="34%"><span class="big">enable incremental compilation</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Gz </span></td>
+          <td width="33%"><span class="big">__stdcall 调用约定 </span></td>
+          <td width="34%"><span class="big">__stdcall calling convention </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Gm[-] </span></td>
+          <td width="33%"><span class="big">启用最小重新生成 </span></td>
+          <td width="34%"><span class="big">enable minimal rebuild</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/GA </span></td>
+          <td width="33%"><span class="big">为 Windows 应用程序进行优化</span></td>
+          <td width="34%"><span class="big">optimize for Windows Application</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Gf </span></td>
+          <td width="33%"><span class="big">启用字符串池 </span></td>
+          <td width="34%"><span class="big">enable string pooling </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/QIfdiv[-] </span></td>
+          <td width="33%"><span class="big">启用 Pentium FDIV 修复 </span></td>
+          <td width="34%"><span class="big">enable Pentium FDIV fix </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/GF </span></td>
+          <td width="33%"><span class="big">启用只读字符串池 </span></td>
+          <td width="34%"><span class="big">enable read-only string pooling </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/QI0f[-] </span></td>
+          <td width="33%"><span class="big">启用 Pentium 0x0f 修复 </span></td>
+          <td width="34%"><span class="big">enable Pentium 0x0f fix</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Gy </span></td>
+          <td width="33%"><span class="big">分隔链接器函数 </span></td>
+          <td width="34%"><span class="big">separate functions for linker</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/GZ </span></td>
+          <td width="33%"><span class="big">启用运行时调试检查</span></td>
+          <td width="34%"><span class="big">enable runtime debug checks</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Gh</span></td>
+          <td width="33%"><span class="big">启用钩子函数调用</span></td>
+          <td width="34%"><span class="big">enable hook function call</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Ge </span></td>
+          <td width="33%"><span class="big">对所有函数强制堆栈检查 </span></td>
+          <td width="34%"><span class="big">force stack checking for all funcs</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Gs[num] </span></td>
+          <td width="33%"><span class="big">禁用堆栈检查调用 </span></td>
+          <td width="34%"><span class="big">disable stack checking calls</span></td>
+        </tr>
+        <tr> 
+          <td align=middle colspan=3 style="COLOR: #008000" width="100%"> 
+            <div align="center"><span class="big"><b>-输出文件- </b></span></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Fa[file] </span></td>
+          <td width="33%"><span class="big">命名程序集列表文件 </span></td>
+          <td width="34%"><span class="big">name assembly listing file</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Fo<file> </span></td>
+          <td width="33%"><span class="big">命名对象文件 </span></td>
+          <td width="34%"><span class="big">name object file</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/FA[sc] </span></td>
+          <td width="33%"><span class="big">配置程序集列表 </span></td>
+          <td width="34%"><span class="big">configure assembly listing </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Fp<file> </span></td>
+          <td width="33%"><span class="big">命名预编译头文件 </span></td>
+          <td width="34%"><span class="big">name precompiled header file</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Fd[file] </span></td>
+          <td width="33%"><span class="big">命名 .PDB 文件 </span></td>
+          <td width="34%"><span class="big">name .PDB file </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Fr[file] </span></td>
+          <td width="33%"><span class="big">命名源浏览器文件 </span></td>
+          <td width="34%"><span class="big">name source browser file</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Fe<file> </span></td>
+          <td width="33%"><span class="big">命名可执行文件 </span></td>
+          <td width="34%"><span class="big">name executable file</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/FR[file] </span></td>
+          <td width="33%"><span class="big">命名扩展 .SBR 文件 </span></td>
+          <td width="34%"><span class="big">name extended .SBR file</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Fm[file] </span></td>
+          <td width="33%"><span class="big">命名映射文件 </span></td>
+          <td width="34%"><span class="big">name map file</span></td>
+        </tr>
+        <tr> 
+          <td align=middle colspan=3 style="COLOR: #008000" width="100%"> 
+            <div align="center"><span class="big"><b>-预处理器- </b></span></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/FI<file> </span></td>
+          <td width="33%"><span class="big">命名强制包含文件 </span></td>
+          <td width="34%"><span class="big">name forced include file</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/C </span></td>
+          <td width="33%"><span class="big">不吸取注释 </span></td>
+          <td width="34%"><span class="big">don't strip comments </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/U<name> </span></td>
+          <td width="33%"><span class="big">移除预定义宏 </span></td>
+          <td width="34%"><span class="big">remove predefined macro</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/D<name>{=|#}<text> </span></td>
+          <td width="33%"><span class="big">定义宏 </span></td>
+          <td width="34%"><span class="big">define macro</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/u </span></td>
+          <td width="33%"><span class="big">移除所有预定义宏 </span></td>
+          <td width="34%"><span class="big">remove all predefined macros</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/E </span></td>
+          <td width="33%"><span class="big">将预处理定向到标准输出</span></td>
+          <td width="34%"><span class="big">preprocess to stdout</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/I </span> 
+            <dir></dir>
+          </td>
+          <td width="33%"><span class="big">添加到包含文件的搜索路径 </span></td>
+          <td width="34%"><span class="big">add to include search path</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/EP </span></td>
+          <td width="33%"><span class="big">将预处理定向到标准输出，不要带行号 </span></td>
+          <td width="34%"><span class="big">preprocess to stdout, no #line</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/X </span></td>
+          <td width="33%"><span class="big">忽略“标准位置” </span></td>
+          <td width="34%"><span class="big">ignore "standard places"</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/P </span></td>
+          <td width="33%"><span class="big">预处理到文件 </span></td>
+          <td width="34%"><span class="big">preprocess to file</span></td>
+        </tr>
+        <tr> 
+          <td align=middle colspan=3 style="COLOR: #008000" width="100%"> 
+            <div align="center"><span class="big"><b>-语言- </b></span></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Zi </span></td>
+          <td width="33%"><span class="big">启用调试信息 </span></td>
+          <td width="34%"><span class="big">enable debugging information</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Zl </span></td>
+          <td width="33%"><span class="big">忽略 .OBJ 中的默认库名 </span></td>
+          <td width="34%"><span class="big">omit default library name in .OBJ</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/ZI </span></td>
+          <td width="33%"><span class="big">启用调试信息的“编辑并继续”功能</span></td>
+          <td width="34%"><span class="big">enable Edit and Continue debug info</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Zg </span></td>
+          <td width="33%"><span class="big">生成函数原型 </span></td>
+          <td width="34%"><span class="big">generate function prototypes</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Z7 </span></td>
+          <td width="33%"><span class="big">启用旧式调试信息 </span></td>
+          <td width="34%"><span class="big">enable old-style debug info</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Zs </span></td>
+          <td width="33%"><span class="big">只进行语法检查 </span></td>
+          <td width="34%"><span class="big">syntax check only</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Zd </span></td>
+          <td width="33%"><span class="big">仅要行号调试信息 </span></td>
+          <td width="34%"><span class="big">line number debugging info only</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/vd{0|1} </span></td>
+          <td width="33%"><span class="big">禁用/启用 vtordisp </span></td>
+          <td width="34%"><span class="big">disable/enable vtordisp</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Zp[n] </span></td>
+          <td width="33%"><span class="big">在 n 字节边界上包装结构 </span></td>
+          <td width="34%"><span class="big">pack structs on n-byte boundary</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/vm<x> </span></td>
+          <td width="33%"><span class="big">指向成员的指针类型 </span></td>
+          <td width="34%"><span class="big">type of pointers to members</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Za </span></td>
+          <td width="33%"><span class="big">禁用扩展（暗指 /Op） </span></td>
+          <td width="34%"><span class="big">disable extensions (implies /Op)</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/noBool </span></td>
+          <td width="33%"><span class="big">禁用“bool”关键字 </span></td>
+          <td width="34%"><span class="big">disable "bool" keyword</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Ze </span></td>
+          <td width="33%"><span class="big">启用扩展（默认） </span></td>
+          <td width="34%"><span class="big">enable extensions (default)</span></td>
+        </tr>
+        <tr> 
+          <td align=middle colspan=3 style="COLOR: #008000" width="100%"> 
+            <div align="center"><span class="big"><b>- 杂项 - </b></span></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/?, /help </span></td>
+          <td width="33%"><span class="big">打印此帮助消息 </span></td>
+          <td width="34%"><span class="big">print this help message</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/c </span></td>
+          <td width="33%"><span class="big">只编译，不链接 </span></td>
+          <td width="34%"><span class="big">compile only, no link</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/W<n> </span></td>
+          <td width="33%"><span class="big">设置警告等级（默认 n=1） </span></td>
+          <td width="34%"><span class="big">set warning level (default n=1)</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/H<num> </span></td>
+          <td width="33%"><span class="big">最大化外部名称长度 </span></td>
+          <td width="34%"><span class="big">max external name length</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/J </span></td>
+          <td width="33%"><span class="big">默认 char 类型是 unsigned </span></td>
+          <td width="34%"><span class="big">default char type is unsigned</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/nologo </span></td>
+          <td width="33%"><span class="big">取消显示版权消息 </span></td>
+          <td width="34%"><span class="big">suppress copyright message</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/WX </span></td>
+          <td width="33%"><span class="big">将警告视为错误 </span></td>
+          <td width="34%"><span class="big">treat warnings as errors</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Tc<source file> </span></td>
+          <td width="33%"><span class="big">将文件编译为 .c </span></td>
+          <td width="34%"><span class="big">compile file as .c </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Yc[file] </span></td>
+          <td width="33%"><span class="big">创建 .PCH 文件 </span></td>
+          <td width="34%"><span class="big">create .PCH file</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Tp<source file> </span></td>
+          <td width="33%"><span class="big">将文件编译为 .cpp </span></td>
+          <td width="34%"><span class="big">compile file as .cpp </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Yd </span></td>
+          <td width="33%"><span class="big">将调试信息放在每个 .OBJ 中 </span></td>
+          <td width="34%"><span class="big">put debug info in every .OBJ</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/TC </span></td>
+          <td width="33%"><span class="big">将所有文件编译为 .c </span></td>
+          <td width="34%"><span class="big">compile all files as .c </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/TP </span></td>
+          <td width="33%"><span class="big">将所有文件编译为 .cpp </span></td>
+          <td width="34%"><span class="big">compile all files as .cpp </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Yu[file] </span></td>
+          <td width="33%"><span class="big">使用 .PCH 文件 </span></td>
+          <td width="34%"><span class="big">use .PCH file</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/V<string> </span></td>
+          <td width="33%"><span class="big">设置版本字符串 </span></td>
+          <td width="34%"><span class="big">set version string</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/YX[file] </span></td>
+          <td width="33%"><span class="big">自动的 .PCH 文件</span></td>
+          <td width="34%"><span class="big">automatic .PCH</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/w </span></td>
+          <td width="33%"><span class="big">禁用所有警告 </span></td>
+          <td width="34%"><span class="big">disable all warnings</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/Zm<n> </span></td>
+          <td width="33%"><span class="big">最大内存分配（默认为 %） </span></td>
+          <td width="34%"><span class="big">max memory alloc (% of default)</span></td>
+        </tr>
+        <tr> 
+          <td align=middle colspan=3 style="COLOR: #008000" width="100%"> 
+            <div align="center"><span class="big"><b>-链接- </b></span></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/MD </span></td>
+          <td width="33%"><span class="big">与 MSVCRT.LIB 链接 </span></td>
+          <td width="34%"><span class="big">link with MSVCRT.LIB</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/MDd </span></td>
+          <td width="33%"><span class="big">与 MSVCRTD.LIB 调试库链接 </span></td>
+          <td width="34%"><span class="big">link with MSVCRTD.LIB debug lib</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/ML </span></td>
+          <td width="33%"><span class="big">与 LIBC.LIB 链接 </span></td>
+          <td width="34%"><span class="big">link with LIBC.LIB</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/MLd </span></td>
+          <td width="33%"><span class="big">与 LIBCD.LIB 调试库链接 </span></td>
+          <td width="34%"><span class="big">link with LIBCD.LIB debug lib</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/MT </span></td>
+          <td width="33%"><span class="big">与 LIBCMT.LIB 链接 </span></td>
+          <td width="34%"><span class="big">link with LIBCMT.LIB </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/MTd </span></td>
+          <td width="33%"><span class="big">与 LIBCMTD.LIB 调试库链接 </span></td>
+          <td width="34%"><span class="big">link with LIBCMTD.LIB debug lib</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/LD </span></td>
+          <td width="33%"><span class="big">创建 .DLL </span></td>
+          <td width="34%"><span class="big">Create .DLL </span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/F<num> </span></td>
+          <td width="33%"><span class="big">设置堆栈大小 </span></td>
+          <td width="34%"><span class="big">set stack size</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/LDd </span></td>
+          <td width="33%"><span class="big">创建 .DLL 调试库 </span></td>
+          <td width="34%"><span class="big">Create .DLL debug libary</span></td>
+        </tr>
+        <tr> 
+          <td width="33%"><span class="big">/link </span></td>
+          <td width="33%"><span class="big">[链接器选项和库] </span></td>
+          <td width="34%"><span class="big">[linker options and libraries]</span></td>
+        </tr>
+        </tbody> 
+      </table>
+    </TD>
+  </TR></TABLE><p>&nbsp;</p>
+</body>
+
+</html>
+<html></html>
