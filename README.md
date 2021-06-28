@@ -26,3 +26,4 @@
 ### 计算机基础
 
 #### [PC逆向学习环境准备](https://github.com/RyzeZR/blog/issues/1)
+#### [day1笔记 VC6.0 winhex ](https://github.com/RyzeZR/blog/issues/2)
