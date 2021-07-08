@@ -27,3 +27,6 @@
 
 #### [PC逆向学习环境准备](https://github.com/RyzeZR/blog/issues/1)
 #### [day1笔记 VC6.0 winhex ](https://github.com/RyzeZR/blog/issues/2)
+#### [C02笔记](https://github.com/RyzeZR/blog/issues/3)
+#### [C03笔记](https://github.com/RyzeZR/blog/issues/4)
+#### [验证程序入口点位置](https://github.com/RyzeZR/blog/issues/5)
